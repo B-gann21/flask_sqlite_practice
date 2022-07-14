@@ -7,9 +7,6 @@ app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///test.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
-def getApp():
-    return app
-
 db = SQLAlchemy(app)
 ma = Marshmallow(app)
 api = Api(app)
@@ -78,6 +75,9 @@ class PostResource(Resource):
         return '', 204
 
 api.add_resource(PostResource, '/posts/<int:post_id>')
+
+def getApp()
+    return app
 
 if __name__ == '__main__':
     app.run(debug=False)
