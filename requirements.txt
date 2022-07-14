@@ -12,10 +12,11 @@ itsdangerous==2.1.2
 Jinja2==3.1.2
 MarkupSafe==2.1.1
 marshmallow==3.17.0
-marshmallow-sqlalchemy
+marshmallow-sqlalchemy==0.28.0
 packaging==21.3
 pipenv==2022.7.4
 platformdirs==2.5.2
+psycopg2==2.9.3
 pyparsing==3.0.9
 pytz==2022.1
 six==1.16.0
