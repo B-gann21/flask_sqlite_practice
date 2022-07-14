@@ -76,9 +76,6 @@ class PostResource(Resource):
 
 api.add_resource(PostResource, '/posts/<int:post_id>')
 
-def getApp()
-    return app
-
 if __name__ == '__main__':
     app.run(debug=False)
 
