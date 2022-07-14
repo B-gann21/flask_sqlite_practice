@@ -6,6 +6,10 @@ from flask_restful import Api, Resource
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///test.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+
+def getApp():
+    return app
+
 db = SQLAlchemy(app)
 ma = Marshmallow(app)
 api = Api(app)
